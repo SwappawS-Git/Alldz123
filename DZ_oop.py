@@ -25,7 +25,7 @@ class Character:
     
     def is_alive(self, Hp):
         return Hp > 0
-a = Character('Pidoras', 20)
+a = Character('Player', 20)
 a.Heal(11)
 a.Take_dmg(11)
 print(a.is_alive(a.Hp))
