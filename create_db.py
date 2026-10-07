@@ -214,10 +214,11 @@ def Request3(Columns, table, Filter):
 def Request4():
     with sqlite3.connect(DB_PATH) as connect:
         cursor = connect.cursor()
-        Columns = ('reason', 'visit_date', 'price')
-        cursor.execute(f"SELECT {Columns[0]}, {Columns[1]}, {Columns[2]} FROM Visits ORDER BY price DESC LIMIT 5")
+        
+        cursor.execute(f"SELECT reason, visit_date, price FROM Visits ORDER BY price DESC LIMIT 5")
         for _ in cursor:
             print(_)
+
 #Request4()
 if __name__ == "__main__":
     main()
