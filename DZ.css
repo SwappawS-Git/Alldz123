@@ -1,0 +1,8 @@
+.INFO_title {background-color: rgba(0, 255, 0, 0.3);}
+.INFO {
+    background-color: rgba(255, 100, 100, 0.5);
+    font-size: 20px;
+}
+
+.INFO-прогромувати {color: green;}
+.INFO-малювати {color: red;}
